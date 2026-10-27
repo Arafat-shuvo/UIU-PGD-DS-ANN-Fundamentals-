@@ -1,3 +1,16 @@
+#Step	Code	কাজ
+#1	X, y	Input ও Target
+#2	W1, W2, b1, b2	Weight ও Bias
+#3	np.dot()	Weighted Sum
+#4	sigmoid()	Activation
+#5	z1, a1, z2, a2	Forward Propagation
+#6	loss	Error Calculation
+#7	delta_output, delta_hidden	Backpropagation
+#8	dW1, dW2	Gradient
+#9	W1 -=, W2 -=	Weight Update
+#10	for epoch	Repeated Training
+#11	accuracy	Evaluation
+#12	new_X	New Data Prediction
 
 
 import numpy as np
@@ -5,6 +18,8 @@ import numpy as np
 # ==========================================
 # STEP 1: Input Data
 # ==========================================
+
+
 
 X = np.array([[1.0, 0.0]])
 y = np.array([[1.0]])
