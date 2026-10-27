@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="560" viewBox="0 0 1100 560">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#64748b"/>
+    </marker>
+    <style>
+      .label { font:  bold 25px Arial, sans-serif; fill: #172033; }
+      .small { font: 20px Arial, sans-serif; fill: #334155; }
+      .nodeText { font: bold 22px Arial, sans-serif; fill: white; text-anchor: middle; }
+      .layer { font: bold 23px Arial, sans-serif; fill: #172033; text-anchor: middle; }
+      .edge { stroke: #64748b; stroke-width: 3; fill: none; marker-end: url(#arrow); }
+    </style>
+  </defs>
+  <rect width="1100" height="560" rx="24" fill="#f8fafc"/>
+  <text x="550" y="55" text-anchor="middle" class="label" font-size="32">Artificial Neural Network (2–2–1)</text>
+  <text x="120" y="115" class="layer">Input Layer</text>
+  <text x="520" y="115" class="layer">Hidden Layer</text>
+  <text x="930" y="115" class="layer">Output Layer</text>
+  <g class="edge">
+    <path d="M165 220 L465 220"/><path d="M165 220 L465 390"/>
+    <path d="M165 390 L465 220"/><path d="M165 390 L465 390"/>
+    <path d="M515 220 L875 305"/><path d="M515 390 L875 305"/>
+  </g>
+  <g>
+    <circle cx="140" cy="220" r="48" fill="#2878c8"/><circle cx="140" cy="390" r="48" fill="#2878c8"/>
+    <circle cx="490" cy="220" r="50" fill="#159b75"/><circle cx="490" cy="390" r="50" fill="#159b75"/>
+    <circle cx="925" cy="305" r="55" fill="#d58a26"/>
+    <text x="140" y="228" class="nodeText">x₁</text><text x="140" y="398" class="nodeText">x₂</text>
+    <text x="490" y="228" class="nodeText">N₁</text><text x="490" y="398" class="nodeText">N₂</text>
+    <text x="925" y="313" class="nodeText">ŷ</text>
+  </g>
+  <text x="140" y="485" text-anchor="middle" class="small">2 input features</text>
+  <text x="490" y="485" text-anchor="middle" class="small">2 hidden neurons</text>
+  <text x="925" y="485" text-anchor="middle" class="small">1 prediction</text>
+  <text x="550" y="530" text-anchor="middle" class="small">Each connection has a weight; each neuron has a bias.</text>
+</svg>
